@@ -1,3 +1,5 @@
+$txt_color: #ffffff
+  
 *
   font-family: 'Roboto', sans-serif
 
@@ -14,6 +16,35 @@ nav
   width: 100%
   z-index: 5
 
+.black
+  min-height: 500px
+  background-color: #070716
+  display: 
+
+.choise
+  position: relative
+  min-height: 898px
+  background: url('../img/bg/mobile_app.jpg') center (center / cover) no-repeat
+  padding: 57px 0 138px 0
+  .black
+    position: absolute
+    top: 0px
+    left: 0px
+    height: 500px
+    width: 100%
+    z-index: 1
+  &_descr
+    font-size: 17px
+    font-weight: 300
+    line-height: 1.41
+    text-align: center
+    color: #222222
+  &_img
+    position: relative
+    margin: 56px auto 0 auto
+    display: block
+    max-width: 760px
+    z-index: 2
 
 .label
   padding: 5px 0
@@ -23,10 +54,15 @@ nav
   font-size: 11px
   font-weight: 300
   text-align: center
-  color: #ffffff
+  color: $txt_color
   text-transform: uppercase
   margin: 0 auto
-  text-align: center
+  &_white
+    position: relative
+    background-color: $txt_color
+    color: #000000
+    z-index: 2
+
 
 .menu
   display: flex
@@ -40,9 +76,9 @@ nav
   &_link
     font-size: 15px
     font-weight: 300
-    color: #ffffff
+    color: $txt_color
     &:hover
-      color: #ffffff
+      color: $txt_color
 
 .mobile
   min-height: 864px
@@ -70,7 +106,7 @@ nav
       font-size: 24px
       font-weight: 300
       text-align: center
-      color: #ffffff
+      color: $txt_color
       text-transform: uppercase
     &_plus
       position: absolute
@@ -101,7 +137,7 @@ nav
     text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.5)
     font-size: 18px
     text-align: center
-    color: #ffffff
+    color: $txt_color
     text-transform: uppercase
     margin: 120px auto 0 auto
   &_descr
@@ -111,12 +147,12 @@ nav
     line-height: 1.33
     letter-spacing: normal
     text-align: center
-    color: #ffffff
+    color: $txt_color
   &_header
     font-size: 60px
     font-weight: 700
     text-align: center
-    color: #ffffff
+    color: $txt_color
     margin: 0
     text-transform: uppercase
     line-height: 60px
@@ -124,7 +160,7 @@ nav
     font-size: 36px
     font-weight: 700
     text-align: center
-    color: #ffffff
+    color: $txt_color
     text-transform: uppercase
     line-height: 36px
     margin: 10px 0 0 0
@@ -173,14 +209,14 @@ nav
     border-radius: 5px
     font-size: 14px
     text-align: center
-    color: #ffffff
+    color: $txt_color
     text-transform: uppercase
     text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21)
   &_call
     font-size: 12px
     font-weight: 300
     text-align: right
-    color: #ffffff
+    color: $txt_color
     margin: 19px 0 0 0
   &_logo
     display: block
@@ -196,9 +232,9 @@ nav
     font-size: 21px
     font-weight: 400
     text-align: right
-    color: #ffffff
+    color: $txt_color
     &:hover
-      color: #ffffff
+      color: $txt_color
 
 .subtitle
   font-size: 17px
@@ -206,6 +242,11 @@ nav
   text-align: center
   color: #222222
   margin: 20px 0 12px 0
+  &_white
+    color: $txt_color
+    position: relative
+    z-index: 2
+    font-weight: 300
 
 .title
   margin: 38px auto 0 auto
@@ -215,3 +256,8 @@ nav
   text-align: center
   color: #222222
   text-transform: uppercase
+  &_white
+    color: $txt_color
+    position: relative
+    z-index: 2
+    margin: 32px auto 0 auto

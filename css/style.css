@@ -17,6 +17,43 @@ nav {
   z-index: 5;
 }
 
+.black {
+  min-height: 500px;
+  background-color: #070716;
+}
+
+.choise {
+  position: relative;
+  min-height: 898px;
+  background: url("../img/bg/mobile_app.jpg") center center/cover no-repeat;
+  padding: 57px 0 138px 0;
+}
+
+.choise .black {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 500px;
+  width: 100%;
+  z-index: 1;
+}
+
+.choise_descr {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.41;
+  text-align: center;
+  color: #222222;
+}
+
+.choise_img {
+  position: relative;
+  margin: 56px auto 0 auto;
+  display: block;
+  max-width: 760px;
+  z-index: 2;
+}
+
 .label {
   padding: 5px 0;
   width: 112px;
@@ -28,7 +65,13 @@ nav {
   color: #ffffff;
   text-transform: uppercase;
   margin: 0 auto;
-  text-align: center;
+}
+
+.label_white {
+  position: relative;
+  background-color: #ffffff;
+  color: #000000;
+  z-index: 2;
 }
 
 .menu {
@@ -295,6 +338,13 @@ nav {
   margin: 20px 0 12px 0;
 }
 
+.subtitle_white {
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+  font-weight: 300;
+}
+
 .title {
   margin: 38px auto 0 auto;
   font-size: 38px;
@@ -303,5 +353,12 @@ nav {
   text-align: center;
   color: #222222;
   text-transform: uppercase;
+}
+
+.title_white {
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+  margin: 32px auto 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
