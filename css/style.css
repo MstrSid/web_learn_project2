@@ -7,6 +7,15 @@ header {
   height: 50px;
 }
 
+footer {
+  min-height: 156px;
+  padding: 14px 10px 40px 10px;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
 nav {
   height: 50px;
   background-color: #212121;
@@ -52,6 +61,110 @@ nav {
   display: block;
   max-width: 760px;
   z-index: 2;
+}
+
+.footer_divider {
+  width: 299px;
+  height: 4px;
+  background-color: #1fbad6;
+  margin: 0 auto;
+}
+
+.footer_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 160px;
+}
+
+.footer_social_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+  background: #070716;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 7px 0 0;
+}
+
+.footer_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 32px 0 0 0;
+}
+
+.footer_wrapper > div {
+  width: 33%;
+}
+
+.footer_wrapper > div:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer_main_links, .footer_sublinks, .footer_link_lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.footer_main_links a, .footer_sublinks a, .footer_link_lang a {
+  color: #070716;
+}
+
+.footer_main_links a:hover, .footer_sublinks a:hover, .footer_link_lang a:hover {
+  text-decoration: none;
+}
+
+.footer_sublinks {
+  margin: 10px 0 0 0;
+  font-size: 11px;
+}
+
+.footer_sublinks a {
+  color: #999999;
+}
+
+.footer_link_lang {
+  margin: 10px 0 0 0;
+  font-size: 11px;
+}
+
+.footer_link_lang a {
+  color: #1fbad6;
+}
+
+.footer_mobile a {
+  margin: 0 5px;
+}
+
+.footer_line {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .label {
@@ -486,5 +599,55 @@ nav {
   position: relative;
   z-index: 2;
   margin: 32px auto 0 auto;
+}
+
+.world {
+  position: relative;
+  background: url("../img/bg/map.jpg") center center/cover no-repeat;
+  min-height: 717px;
+  padding: 50px 0;
+}
+
+.world .label_white {
+  width: 76px;
+  height: 24px;
+  text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.7);
+}
+
+.world .subtitle_white {
+  text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.7);
+}
+
+.world_cities {
+  display: block;
+  position: absolute;
+  bottom: 50px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.world_cities a {
+  color: #1fbad6;
+}
+
+.world_cities a:hover {
+  text-decoration: none;
+  color: #01b40a;
+  text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.61);
+}
+
+.world_cities:hover {
+  -webkit-transform: scale(1.2) translateX(-40%);
+          transform: scale(1.2) translateX(-40%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=style.css.map */

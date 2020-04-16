@@ -3,8 +3,8 @@ $main_color: #007bce
 $second_color: #01b40a
 
 @mixin btn_decor
-    box-shadow: inset 0px -2px 0 0 rgba(0, 0, 0, 0.12)
-    border: solid 2px rgba(0, 0, 0, 0.07)
+  box-shadow: inset 0px -2px 0 0 rgba(0, 0, 0, 0.12)
+  border: solid 2px rgba(0, 0, 0, 0.07)
 
 @mixin btn_hover
   &:hover
@@ -19,6 +19,13 @@ header
   position: relative
   height: 50px
 
+footer
+  min-height: 156px
+  padding: 14px 10px 40px 10px 
+  a
+    &:hover
+      text-decoration: none
+
 nav
   height: 50px
   background-color: #212121
@@ -27,6 +34,7 @@ nav
   height: 50px
   width: 100%
   z-index: 5
+
 
 .black
   min-height: 500px
@@ -57,6 +65,64 @@ nav
     display: block
     max-width: 760px
     z-index: 2
+
+.footer
+  &_divider
+    width: 299px
+    height: 4px
+    background-color: #1fbad6
+    margin: 0 auto
+  &_social
+    display: flex
+    width: 160px
+    &_item
+      display: flex
+      color: #ffffff
+      border-radius: 100%
+      width: 32px
+      height: 32px
+      background: #070716
+      justify-content: center
+      align-items: center
+      margin: 0 7px 0 0
+  &_wrapper
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    padding: 32px 0 0 0
+  &_wrapper>div
+    width: 33%
+    &:nth-child(3)
+      display: flex
+      justify-content: flex-end
+  &_main_links, &_sublinks, &_link_lang
+    display: flex
+    justify-content: space-around
+    text-transform: uppercase
+    font-weight: 300
+    a
+      color: #070716
+      &:hover
+        text-decoration: none
+  &_sublinks
+    margin: 10px 0 0 0
+    font-size: 11px
+    a
+      color: #999999
+  &_link_lang
+    margin: 10px 0 0 0
+    font-size: 11px
+    a
+      color: #1fbad6
+  &_mobile
+    a
+      margin: 0 5px
+  &_line
+    width: 100%
+    margin: 0
+    padding: 0
+
+
 
 .label
   padding: 5px 0
@@ -286,8 +352,6 @@ nav
         &:before
           background: url('../icons/check_red.png') center (center / cover) no-repeat
 
-    
-
 .subheader
   height: 84px
   position: absolute
@@ -358,3 +422,36 @@ nav
     position: relative
     z-index: 2
     margin: 32px auto 0 auto
+
+.world
+  position: relative
+  background: url('../img/bg/map.jpg') center (center / cover) no-repeat
+  min-height: 717px
+  padding: 50px 0
+  .label_white
+    width: 76px
+    height: 24px
+    text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.7)
+  .subtitle_white
+    text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.7)
+  &_cities
+    display: block
+    position: absolute
+    bottom: 50px
+    margin: 0 auto
+    text-transform: uppercase
+    font-size: 15px
+    font-weight: 400
+    text-align: center
+    transition: 0.5s
+    left: 50%
+    transform: translateX(-50%)
+    a
+      color: #1fbad6
+      &:hover
+        text-decoration: none
+        color: $second_color
+        text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.61)
+    &:hover
+      transform: scale(1.2) translateX(-40%)
+      transition: 0.5s
