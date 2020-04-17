@@ -616,7 +616,7 @@ nav {
 .world .label_white {
   width: 76px;
   height: 24px;
-  text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.7);
+  font-weight: 400;
 }
 
 .world .subtitle_white {
