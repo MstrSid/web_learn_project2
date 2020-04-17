@@ -121,6 +121,11 @@ nav {
           justify-content: flex-end;
 }
 
+.footer_links {
+  width: 390px;
+  margin: 0 auto;
+}
+
 .footer_main_links, .footer_sublinks, .footer_link_lang {
   display: -webkit-box;
   display: -ms-flexbox;
