@@ -13,7 +13,6 @@ nav
   height: 50px
   background-color: #212121
   position: fixed
-  top: 0px
   height: 50px
   width: 100%
   z-index: 5
@@ -21,15 +20,18 @@ nav
 
 .black
   min-height: 500px
-  background-color: #070716
-  display: 
+  background-color: #070716 
+
+.call_show_small
+  display: none
 
 .choise
   position: relative
   min-height: 898px
   background: url('../img/bg/mobile_app.jpg') center (center / cover) no-repeat
   padding: 57px 0 138px 0
-  .black
+  &_black
+    background-color: #070716 
     position: absolute
     top: 0px
     left: 0px
@@ -42,11 +44,13 @@ nav
     line-height: 1.41
     text-align: center
     color: #222222
+    position: relative
+    z-index: 3
   &_img
     position: relative
     margin: 56px auto 0 auto
     display: block
-    max-width: 760px
+    max-width: 100%
     z-index: 2
 
 .footer
@@ -93,8 +97,10 @@ nav
         text-decoration: none
   &_sublinks
     margin: 10px 0 0 0
-    font-size: 11px
     a
+      font-size: 11px
+      font-weight: 300
+      text-transform: uppercase
       color: #999999
   &_link_lang
     margin: 10px 0 0 0
@@ -109,6 +115,8 @@ nav
     margin: 0
     padding: 0
 
+.hamburger
+  display: none
 
 
 .label
@@ -265,7 +273,7 @@ nav
     line-height: 36px
     margin: 10px 0 0 0
 
-.reason
+.reasons
   padding: 71px 0 68px 0
   &_block
     display: flex
@@ -345,7 +353,7 @@ nav
   width: 100%
   background-color: rgba(0, 0, 0, 0.6)
   top: 50px
-  &_btn
+  &_btn, &_btn_sm
     margin: 19px 0 0 0
     width: 172px
     height: 46px
@@ -359,7 +367,6 @@ nav
     text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21)
     @include btn_decor
     @include btn_hover
-
   &_call
     font-size: 12px
     font-weight: 300
