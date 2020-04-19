@@ -201,6 +201,15 @@
     .call_show_small
         display: block
 
+    .menu
+        width: 85%
+        &_item
+            width: 100%
+            text-align: center
+            padding: 5px 0
+        &_link
+            display: block
+
     .mobile
         &_item
             padding-top: 80px
@@ -234,6 +243,8 @@
             display: none
         &_btn
             margin: 54px auto 0 auto
+            @include btn_hover_off
+                
 
     .subheader
         height: 60px
@@ -246,14 +257,15 @@
             font-size: 12px
             width: 130px
             height: 25px
+            @include btn_hover_off
         &_phone
             display: block
             font-size: 12px
             text-align: center
         &_logo
             margin: 16px 0 0 0
-    .menu
-        width: 85vw
+
+
     .reasons
         padding: 22px 0 36px 0
         .title
@@ -310,6 +322,10 @@
                     height: 24px
         &_line
             display: none
+
+    .menu
+        &_link
+            font-size: 18px
 
     .mobile
         &_item
